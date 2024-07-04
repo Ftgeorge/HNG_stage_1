@@ -1,0 +1,145 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.goal-year {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#year1 {
+    background-color: #e3f2fd;
+}
+
+#year2 {
+    background-color: #fff4d8;
+}
+
+.goal-image {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.goal-details {
+    flex-grow: 1;
+}
+
+.goals-section h2 {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-section img {
+        width: 50%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .goal-year {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goal-image {
+        width: 80%;
+        margin: 0 0 20px 0;
+        border-radius: 5%;
+    }
+
+    .goal-year:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .profile-section img {
+        border-radius: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .goal-year {
+        flex-direction: column;
+    }
+
+    .goal-year:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .goal-image {
+        width: 100%;
+    }
+
+    .profile-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+}
